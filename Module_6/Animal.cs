@@ -8,13 +8,13 @@ namespace Module_6_OOP
 {
     public class Animal
     {
-        private string eyeColor; //fields, written in camel case
+        private string eyeColor; //fields, written in camel case or _camelCase
         private string weight;
         private string height;
         private string age;
 
-        //constructor:
-        public Animal(string eyeColor, string weight, string height, string age) //to qualify fields
+        //constructor starts here
+        public Animal(string eyeColor, string weight, string height, string age) //to set fields
         {
             
             this.eyeColor = eyeColor;
