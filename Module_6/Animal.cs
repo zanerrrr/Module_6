@@ -11,10 +11,10 @@ namespace Module_6_OOP
         private string eyeColor; //fields, written in camel case or _camelCase
         private string weight;
         private string height;
-        private string age;
+        private int age;
 
         //constructor starts here
-        public Animal(string eyeColor, string weight, string height, string age) //to set fields
+        public Animal(string eyeColor, string weight, string height, int age) //to set fields
         {
             
             this.eyeColor = eyeColor;
@@ -39,29 +39,54 @@ namespace Module_6_OOP
             get {return weight; }
             set {weight = value; }
         }
-        public string Age
+        public int Age
         {
-            get {return age; }
-            set {age = value; }
+            get { return age;}
+            set { age = value; }
+            //get
+            //{
+            //    return age;   
+            //}
+
+            //set
+            //{
+            //    if (value >= 15)
+            //    {
+            //        age = value;
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine(0);
+            //    }
+            //}
         }
-        public void printAnimal()
+        //public void printAnimal()
+        //{
+        //    Console.WriteLine("The animal's eye color: {0};\nIt weights: {1};\nIts height is {2} cm; \n It is {3} years old.", eyeColor, weight, height, age);
+
+        //}
+        public string ChangeEyeColor()
         {
-            Console.WriteLine("The animal's eye color: {0};\nIt weights: {1};\nIts height is {2} cm; \n It is {3} years old.", eyeColor, weight, height, age);
+            return eyeColor;
+        }
+
+        public string ChangeHeight()
+        {
+            return height;
+        }
+
+        public void SetAge(int newAge)
+        {
+            if (newAge >= 15)
+            {
+                age = newAge;
+            }
+            else
+            {
+                Console.WriteLine(0);
+            }
 
         }
-        private static string ChangeEyeColor()
-        {
-            return "black";
-        }
-        private static string ChangeHeight()
-        {
-            return "122cm";
-        }
-
-        private static string SetAge()
-        {
-            return "15";
-        }   
 
 
     }

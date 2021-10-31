@@ -9,10 +9,8 @@ namespace Module_6_OOP
     static class DescriptionOfTheAnimal
     {
         private static string EyeColor;
-        private static string SkinColor;
         private static string Weight;
         private static string Height;
         private static string Age;
-
     }
 }
